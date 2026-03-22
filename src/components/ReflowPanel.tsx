@@ -126,16 +126,7 @@ export function ReflowPanel() {
                 <pre className="text-[10px] text-red-800 bg-red-100 rounded p-2 whitespace-pre-wrap break-all max-h-24 overflow-auto font-mono leading-relaxed">{issue.html}</pre>
               </div>
 
-              {/* Fixed HTML */}
-              {issue.fixedHtml && (
-                <div className="px-3 py-2 bg-green-50">
-                  <div className="flex items-center justify-between mb-1">
-                    <span className="text-[10px] font-semibold text-green-700">✅ Fixed HTML</span>
-                    <CopyButton text={issue.fixedHtml} label="📋 Copy Fix" />
-                  </div>
-                  <pre className="text-[10px] text-green-800 bg-green-100 rounded p-2 whitespace-pre-wrap break-all max-h-24 overflow-auto font-mono leading-relaxed">{issue.fixedHtml}</pre>
-                </div>
-              )}
+              {/* Fixed HTML removed */}
             </div>
           ))}
         </>
